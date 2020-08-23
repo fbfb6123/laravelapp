@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+a
+
+<!-- <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
 
 <div class="gallery-box-container">
 	<a href="#" class="gallery-box">
@@ -44,4 +46,4 @@
 			</span>
 		</span>	
 	</a>
-</div>
+</div> -->
