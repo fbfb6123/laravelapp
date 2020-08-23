@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+
 <div class="demo-description">
         <h1 class="demo-description__title">Full Course Dinner</h1>
         <p class="demo-description__p">Resize the browser to see the <picture> effect.</p>
