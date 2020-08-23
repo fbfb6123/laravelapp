@@ -16,4 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('todos', 'TodoController');
-
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('demos', 'DemoController');

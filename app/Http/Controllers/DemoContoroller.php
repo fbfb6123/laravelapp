@@ -13,7 +13,7 @@ class DemoContoroller extends Controller
      */
     public function index()
     {
-        //
+        return view('demos.index')
     }
 
     /**
