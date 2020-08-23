@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('todos', 'TodoController');
+Route::get('/hello', 'helloController@index');
 
 
 
