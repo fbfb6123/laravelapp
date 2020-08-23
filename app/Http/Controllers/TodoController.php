@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Todo;
 
 class TodoController extends Controller
 {
@@ -13,8 +14,8 @@ class TodoController extends Controller
      */
     public function index()
     {
-        $todos = Todo::all();
-
+        #$todos = Todo::all();
+        $todos = Todo::orderBy('id','desc')->get();
         return view('todos.index', compact('todos'));
     }
 
@@ -45,7 +46,7 @@ class TodoController extends Controller
             'memo' => $request->get('memo')
         ]);
         $todo->save();
-        return redirect('/todo')->with('success', 'todo saved!');
+        return redirect('/todos')->with('success', 'todo saved!');
     }
 
     /**
@@ -56,7 +57,8 @@ class TodoController extends Controller
      */
     public function show($id)
     {
-        //
+        $todo = Todo::find($id);
+        return view('todos.show', compact('todo'));
     }
 
     /**
@@ -68,7 +70,7 @@ class TodoController extends Controller
     public function edit($id)
     {
         $todo = Todo::find($id);
-    return view('todos.edit', compact('todo'));
+        return view('todos.edit', compact('todo'));        
     }
 
     /**
