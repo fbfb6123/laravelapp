@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/hello.css') }}">
+<link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
 
 <div class="gallery-box-container">
 	<a href="#" class="gallery-box">
